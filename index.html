@@ -211,7 +211,11 @@
     function openLightbox(image) {
       lightboxImage.src = image.src;
       lightboxImage.alt = image.alt;
-      lightboxImage.style.background = image.src.includes("dk-sprite-sheet.png") ? "#1c1c1a" : "transparent";
+      const isDkSpriteSheet = image.src.includes("dk-sprite-sheet.png");
+      const isDkPortraitSheet = image.src.includes("dk-expressions.png");
+      lightboxImage.style.background = isDkSpriteSheet ? "#1c1c1a" : "transparent";
+      lightboxImage.classList.toggle("large-preview", isDkSpriteSheet || isDkPortraitSheet);
+      lightboxImage.classList.toggle("pixel-preview", isDkSpriteSheet);
       lightboxCaption.textContent = image.alt;
       lightbox.classList.add("open");
       lightbox.setAttribute("aria-hidden", "false");
