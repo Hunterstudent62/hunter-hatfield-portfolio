@@ -1,0 +1,151 @@
+name: Migrate portfolio into standalone repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/migrate-portfolio.yml
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out standalone portfolio
+        uses: actions/checkout@v4
+
+      - name: Fetch current portfolio source
+        run: |
+          git clone --depth 1 https://github.com/Hunterstudent62/01-prj-personal-site.git /tmp/source-portfolio
+
+      - name: Copy curated site and reorganize assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC=/tmp/source-portfolio
+
+          mkdir -p assets/images assets/models code-samples
+
+          cp "$SRC/index.html" index.html
+          cp "$SRC/style.css" style.css
+          cp -a "$SRC/code-samples/." code-samples/
+
+          cp "$SRC/forest.jpg" assets/images/forest.jpg
+          cp "$SRC/your-photo.jpg" assets/images/profile.jpg
+          cp "$SRC/prerendereddkspritesheet.png" assets/images/dk-sprite-sheet.png
+          cp "$SRC/dk3dmodel.png" assets/images/dk-model.png
+          cp "$SRC/dkexpressions.png" assets/images/dk-expressions.png
+          cp "$SRC/3d Models for low poly snowboard game.png" assets/images/low-poly-snowboard.png
+          cp "$SRC/House pixel 1.png" assets/images/pixel-room.png
+          cp "$SRC/Ant character RPG sprite.png" assets/images/ant-sprite.png
+          cp "$SRC/exploding_bombbig.gif" assets/images/bomb.gif
+          cp "$SRC/3d model preview.png" assets/images/flyer-preview.png
+          cp "$SRC/Hop-o CS practice 2.jpg" assets/images/hopo-character-art.jpg
+          cp "$SRC/King duel CS practice 5.jpg" assets/images/king-character-study.jpg
+          cp "$SRC/blaze.png" assets/images/blaze.png
+          cp "$SRC/springyboii.jpg" assets/images/springtrap.jpg
+          cp "$SRC/art test.png" assets/images/art-test.png
+          cp "$SRC/Midna.jpg" assets/images/midna.jpg
+          cp "$SRC/discoid-roaches-tampa-logo.svg" assets/images/discoid-roaches-tampa-logo.svg
+          cp "$SRC/flyer.obj" assets/models/flyer.obj
+
+          touch .nojekyll
+
+      - name: Rewrite asset paths and repository links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          index = Path('index.html')
+          html = index.read_text(encoding='utf-8')
+
+          replacements = {
+              'src="your-photo.jpg"': 'src="assets/images/profile.jpg"',
+              'src="prerendereddkspritesheet.png"': 'src="assets/images/dk-sprite-sheet.png"',
+              'src="dk3dmodel.png"': 'src="assets/images/dk-model.png"',
+              'src="dkexpressions.png"': 'src="assets/images/dk-expressions.png"',
+              'src="3d Models for low poly snowboard game.png"': 'src="assets/images/low-poly-snowboard.png"',
+              'src="House pixel 1.png"': 'src="assets/images/pixel-room.png"',
+              'src="Ant character RPG sprite.png"': 'src="assets/images/ant-sprite.png"',
+              'src="exploding_bombbig.gif"': 'src="assets/images/bomb.gif"',
+              'src="3d model preview.png"': 'src="assets/images/flyer-preview.png"',
+              'href="flyer.obj"': 'href="assets/models/flyer.obj"',
+              'src="Hop-o CS practice 2.jpg"': 'src="assets/images/hopo-character-art.jpg"',
+              'src="King duel CS practice 5.jpg"': 'src="assets/images/king-character-study.jpg"',
+              'src="blaze.png"': 'src="assets/images/blaze.png"',
+              'src="springyboii.jpg"': 'src="assets/images/springtrap.jpg"',
+              'src="art test.png"': 'src="assets/images/art-test.png"',
+              'src="Midna.jpg"': 'src="assets/images/midna.jpg"',
+              'src="discoid-roaches-tampa-logo.svg"': 'src="assets/images/discoid-roaches-tampa-logo.svg"',
+              'https://github.com/Hunterstudent62/01-prj-personal-site': 'https://github.com/Hunterstudent62/hunter-hatfield-portfolio',
+          }
+          for old, new in replacements.items():
+              html = html.replace(old, new)
+
+          # The résumé button is intentionally wired now and becomes live when
+          # Hunter_Hatfield_Resume.pdf is uploaded to the repository root.
+          index.write_text(html, encoding='utf-8')
+
+          css = Path('style.css')
+          styles = css.read_text(encoding='utf-8')
+          styles = styles.replace('background-image: url("forest.jpg");', 'background-image: url("assets/images/forest.jpg");')
+
+          # Pixel samples should sit naturally in the same soft surface as their
+          # production card, not stark white or black frames.
+          styles = styles.replace(
+              '.pixel-asset-row .zoom-wrap {\n  overflow: hidden;\n  background: var(--surface);',
+              '.pixel-asset-row .zoom-wrap {\n  overflow: hidden;\n  background: var(--soft);'
+          )
+          styles = styles.replace(
+              'image-rendering: pixelated;\n  background: var(--surface);',
+              'image-rendering: pixelated;\n  background: var(--soft);'
+          )
+          css.write_text(styles, encoding='utf-8')
+          PY
+
+      - name: Write standalone repository README
+        run: |
+          cat > README.md <<'EOF'
+          # Hunter Hatfield Portfolio
+
+          Professional portfolio for Hunter Hatfield, a computer science student and multimedia game-design graduate in the Tampa Bay area.
+
+          The portfolio highlights work across:
+
+          - Software development in C, C#, Java, JavaScript, Python, and web technologies
+          - GIS, environmental data, QGIS, Power BI, and data visualization
+          - Unity gameplay programming and technical game-system design
+          - QA, troubleshooting, testing, and technical documentation
+          - Blender/Maya technical art, pre-rendered graphics, pixel art, and illustration
+          - Zoo nutrition, feeder-insect operations, and animal-focused technical work
+
+          ## Selected technical work
+
+          - **Kid Hop-o Player Movement System**: Unity/C# architecture and detailed technical case study without publishing the full proprietary game project.
+          - **Tutor Directory**: Multi-file C project using structs, pointers, dynamically allocated linked lists, `malloc`/`free`, searching, deletion, validation, and cleanup.
+          - **Poultry Production Tracker**: Java data-tracking project using arrays, validation, summaries, and reporting.
+          - **Florida Invasive Reptile GIS Dashboard**: QGIS/Python/Power BI project currently being completed for final portfolio integration.
+
+          ## Portfolio structure
+
+          - `index.html` / `style.css`: static portfolio site
+          - `assets/images/`: curated portfolio visuals and technical-art examples
+          - `assets/models/`: downloadable model source used in the portfolio
+          - `code-samples/`: selected source code and technical case studies
+
+          The résumé button in the site is prepared for `Hunter_Hatfield_Resume.pdf`, which will be added with the final résumé update.
+          EOF
+
+      - name: Commit standalone portfolio migration
+        run: |
+          git config user.name "Hunter Hatfield"
+          git config user.email "hunterhatfield@usf.edu"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No migration changes to commit."
+          else
+            git commit -m "Migrate polished portfolio into standalone repository"
+            git push
+          fi
