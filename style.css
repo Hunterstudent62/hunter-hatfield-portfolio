@@ -364,7 +364,7 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; fo
   height: auto;
   object-fit: contain;
   image-rendering: auto;
-  background: var(--surface);
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, .24);
   border-radius: 10px;
   box-shadow: 0 18px 50px rgba(0, 0, 0, .38);
