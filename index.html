@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hunter Hatfield's portfolio: software development, GIS and environmental data, game development, technical art, zoo experience, and digital illustration." />
+  <title>Hunter Hatfield | Software, GIS, Game Development & Technical Art</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Hunter Hatfield</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#software">Software & Data</a>
+        <a href="#games">Games</a>
+        <a href="#visual-work">Visual Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <img class="hero-photo" src="assets/images/profile.jpg" alt="Hunter Hatfield" />
+      <div class="hero-text">
+        <p class="eyebrow">Tampa Bay, Florida</p>
+        <h1>Hunter Hatfield</h1>
+        <p class="hero-subtitle">Computer Science Student • Software & GIS • Game Development • Technical Art</p>
+        <p class="hero-summary">I build software, interactive systems, and data-driven tools across programming, GIS, game development, and technical art, with long-term interests in scientific software, ecology, conservation, and games.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#software">View technical work</a>
+          <a class="button" href="Hunter_Hatfield_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a class="button" href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card intro-card" id="about">
+      <div>
+        <p class="section-kicker">About</p>
+        <h2>Software development across data, games, and animal-focused work</h2>
+      </div>
+      <div class="two-column-copy">
+        <p>I am a computer science student at the University of South Florida and a multimedia game-design graduate. My work spans programming, game systems, QA/testing, web development, GIS and data visualization, technical art, project leadership, and digital production.</p>
+        <p>I also bring hands-on animal and zoo experience through ZooTampa's Animal Nutrition program and my own feeder-insect operation. I am especially interested in roles where software and data intersect with GIS, environmental science, conservation, research, or animal-care systems, while continuing independent game development through Retnuh Productions.</p>
+      </div>
+    </section>
+
+    <section class="card" id="skills">
+      <p class="section-kicker">Technical toolkit</p>
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <article class="skill-group"><h3>Programming & Web</h3><p>C, C#, Java, JavaScript, Python, C++, HTML5, CSS, GML, GitHub, WordPress</p></article>
+        <article class="skill-group"><h3>GIS, Data & BI</h3><p>QGIS, Power BI, Microsoft Excel, data cleaning, mapping, dashboard design, visualization, QA/QC, recordkeeping</p></article>
+        <article class="skill-group"><h3>Game & Interactive</h3><p>Unity, Godot, Unreal Engine, GameMaker Studio, RPG Maker MZ/VX Ace, gameplay systems, level design, UI implementation</p></article>
+        <article class="skill-group"><h3>Art & Technical Art</h3><p>Clip Studio Paint, Aseprite, GIMP, Photoshop, Illustrator, Maya, Blender, Spine 2D, Figma, low-poly modeling, pre-rendered sprite workflows, image processing</p></article>
+        <article class="skill-group"><h3>Zoo & Animal Systems</h3><p>Species-specific diet preparation, feeder-insect husbandry, reptile care, sanitation, welfare observation, introductory ZIMS and Zoo Diet NaviGator</p></article>
+        <article class="skill-group"><h3>QA, Systems & Documentation</h3><p>Manual testing, bug reproduction, troubleshooting, issue documentation, technical documentation, Computer Organization, RISC-V assembly concepts, project planning</p></article>
+      </div>
+    </section>
+
+    <section class="card" id="software">
+      <div class="section-heading-row">
+        <div><p class="section-kicker">Featured work</p><h2>Software & Data Projects</h2></div>
+        <p class="section-summary">Selected work demonstrating programming fundamentals, gameplay systems, GIS/data workflows, responsive web development, APIs, and AI-assisted development.</p>
+      </div>
+      <div class="projects-grid featured-grid">
+        <article class="project-tile featured-project"><div><div class="tag-row"><span class="tag">QGIS</span><span class="tag">Power BI</span><span class="tag">Python</span><span class="status">In progress</span></div><h3>Florida Invasive Reptile GIS Dashboard</h3><p>Cleaning and standardizing public occurrence records for invasive and nonnative reptiles in Florida, then building species- and county-level maps and an interactive dashboard to examine distribution and reporting patterns.</p></div><p class="project-note">A portfolio project connecting computer science, GIS, environmental data, and my animal/conservation interests.</p></article>
+
+        <article class="project-tile featured-project"><div><div class="tag-row"><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">Gameplay Systems</span></div><h3>Kid Hop-o Player Movement System</h3><p>An extensive Unity/C# controller for a momentum-focused platform RPG, supporting running, jumping, spin states, fluttering, wall interactions, ledge and vine behavior, custom air physics, animation synchronization, and runtime movement tuning.</p></div><div class="link-row"><a href="https://github.com/Hunterstudent62/hunter-hatfield-portfolio/tree/main/code-samples/kid-hopo-player-movement" target="_blank" rel="noopener">Architecture notes</a><a href="https://github.com/Hunterstudent62/hunter-hatfield-portfolio/blob/main/code-samples/kid-hopo-player-movement/CASE_STUDY.md" target="_blank" rel="noopener">Full case study</a></div></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">C</span><span class="tag">Linked Lists</span><span class="tag">Dynamic Memory</span><span class="tag">Multi-file Design</span></div><h3>Tutor Directory</h3><p>A multi-file C command-line application built around structs, pointers, and a dynamically allocated linked list. It uses <code>malloc</code>/<code>free</code>, string handling, header files and include guards, sorted insertion, duplicate detection, preference-based search, record deletion, input validation, and complete cleanup of allocated nodes before exit.</p></div><a href="https://github.com/Hunterstudent62/hunter-hatfield-portfolio/tree/main/code-samples/c-tutor-directory" target="_blank" rel="noopener">View source & build notes</a></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">Java</span><span class="tag">2D Arrays</span><span class="tag">Animal Data</span></div><h3>Poultry Production Tracker</h3><p>A Java coursework application for tracking egg production across individual birds and weeks. It validates input, calculates totals and weekly averages, and identifies the highest producer.</p></div><a href="https://github.com/Hunterstudent62/hunter-hatfield-portfolio/tree/main/code-samples/java-poultry-tracker" target="_blank" rel="noopener">View source & project notes</a></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">NASA API</span><span class="tag">Responsive UI</span><span class="tag">GCA Project</span></div><h3>NASA Space Explorer</h3><p>Global Career Accelerator web application built around NASA astronomy data, with API-driven content, responsive presentation, date controls, gallery behavior, and loading/error states.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/07-nasa-space-explorer/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/07-nasa-space-explorer" target="_blank" rel="noopener">GitHub</a></div></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">Responsive Design</span><span class="tag">Localization</span><span class="tag">GCA Project</span></div><h3>Intel Sustainability Web Experience</h3><p>Responsive educational webpage created through the Global Career Accelerator, emphasizing adaptive layouts, interactive presentation, localization considerations, and support across display sizes.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/03-project-intel-locilization/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/03-project-intel-locilization" target="_blank" rel="noopener">GitHub</a></div></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">AI</span><span class="tag">Deployment</span><span class="tag">GCA Project</span></div><h3>L'Oréal AI Chatbot</h3><p>Global Career Accelerator AI-assisted web project exploring chatbot interaction, JavaScript integration, user-facing recommendations, and deployment workflows.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/08-prj-loreal-chatbot/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/08-prj-loreal-chatbot" target="_blank" rel="noopener">GitHub</a></div></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Game Prototype</span><span class="tag">AI-Assisted Coursework</span><span class="tag">GCA Project</span></div><h3>Clean Water Catch</h3><p>Browser-game prototype created through the Global Career Accelerator. The assignment <strong>required generative AI throughout development, including visual-asset generation</strong>. I include it to demonstrate JavaScript game logic, rapid prototyping, iteration, and deployment rather than as a visual-art showcase.</p></div><div class="link-row"><a href="https://hunterstudent62.github.io/05-charity-water-game-prototype/" target="_blank" rel="noopener">Live project</a><a href="https://github.com/Hunterstudent62/05-charity-water-game-prototype" target="_blank" rel="noopener">GitHub</a></div></article>
+      </div>
+    </section>
+
+    <section class="card" id="games">
+      <p class="section-kicker">Creative development</p>
+      <h2>Game Development</h2>
+      <div class="projects-grid game-grid">
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Production Leadership</span></div><h3>Kid Hop-o: Rising Star</h3><p>Long-term story-driven platform RPG developed through Retnuh Productions. I lead an active multidisciplinary team and have coordinated more than 15 contributors across the project's development, working across programming, systems design, level design, UI, writing, QA, art direction, technical documentation, and production planning.</p><p class="project-note">The current focus is a polished, publisher-facing vertical slice that brings the project's movement, battle, narrative, art, and audio systems together.</p></div><div class="link-row"><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Project site</a><a href="https://retnuhproductions.itch.io/" target="_blank" rel="noopener">Retnuh Productions</a></div></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">RPG Maker MZ</span><span class="tag">JavaScript</span><span class="tag">Blender</span><span class="tag">Clip Studio</span></div><h3>DKCRPG</h3><p>An independent Donkey Kong Country-inspired fan RPG used to explore RPG systems, writing, UI, character portraits, custom gameplay behavior, and SNES-style pre-rendered graphics.</p><p class="project-note">I have written custom JavaScript plugins and scripts to extend RPG Maker MZ with unique systems and behaviors beyond its stock functionality, while also creating 3D-to-2D assets, portrait sets, and other production art.</p></div><a href="#dk-pipeline">View production-art breakdown</a></article>
+
+        <article class="project-tile"><div><div class="tag-row"><span class="tag">RPG Maker VX Ace</span><span class="tag">Pixel Art</span><span class="tag">Completed Game</span></div><h3>Planarian's Tale 2</h3><p>A completed game created for the 2017 Indie Game Making Contest and one of my earlier full project releases. It represents the beginning of my longer-running game-design and production experience.</p></div><a href="https://retnuhproductions.itch.io/planarians-tale-2" target="_blank" rel="noopener">Play / view project</a></article>
+      </div>
+    </section>
+
+    <section class="card" id="visual-work">
+      <div class="section-heading-row">
+        <div><p class="section-kicker">Technical art & production</p><h2>Game Assets and 3D Work</h2></div>
+        <p class="section-summary">Selected production work covering modeling, rigging, rendering, image processing, pixel-art assets, animation, and 2D illustration.</p>
+      </div>
+
+      <article class="production-feature" id="dk-pipeline">
+        <div class="production-copy">
+          <div class="tag-row"><span class="tag">Blender</span><span class="tag">Pre-rendered Graphics</span><span class="tag">Batch Processing</span></div>
+          <h3>DKCRPG Pre-rendered Character Pipeline</h3>
+          <p>I built a custom Donkey Kong model and rig in Blender, posed and rendered animation frames, then processed those renders into low-resolution 2D sprites inspired by the pre-rendered workflows used by SNES-era games such as Donkey Kong Country and Super Mario RPG.</p>
+          <p>The workflow combines 3D modeling, armature/rig use, animation posing, rendering, image filtering, sprite-sheet preparation, and batch file manipulation into a repeatable game-asset pipeline.</p>
+        </div>
+        <div class="pipeline-visuals">
+          <figure class="production-image contain"><img loading="lazy" src="assets/images/dk-sprite-sheet.png" alt="Pre-rendered Donkey Kong animation sprite sheet" /><figcaption>Finished pre-rendered animation frames prepared as a game sprite sheet.</figcaption></figure>
+          <figure class="production-image contain"><img loading="lazy" src="assets/images/dk-model.png" alt="Rigged Donkey Kong model in Blender" /><figcaption>Rigged Blender model used to pose and render the animation frames.</figcaption></figure>
+          <figure class="production-image contain wide"><img loading="lazy" src="assets/images/dk-expressions.png" alt="Donkey Kong dialogue expression portrait sheet" /><figcaption>Clip Studio Paint expression set created for dialogue and RPG presentation.</figcaption></figure>
+        </div>
+      </article>
+
+      <div class="production-grid">
+        <article class="production-card">
+          <div><div class="tag-row"><span class="tag">Autodesk Maya</span><span class="tag">Low Poly</span></div><h3>Low-poly Snowboard Game Assets</h3><p>Low-poly environmental and character assets created in Maya for a game-development project, demonstrating simplified modeling, scene construction, and game-oriented 3D asset creation.</p></div>
+          <figure class="production-image contain"><img loading="lazy" src="assets/images/low-poly-snowboard.png" alt="Low-poly game assets displayed in Autodesk Maya" /></figure>
+        </article>
+
+        <article class="production-card">
+          <div><div class="tag-row"><span class="tag">Pixel Art</span><span class="tag">Animation</span><span class="tag">Game Assets</span></div><h3>Pixel-art Production Samples</h3><p>A small cross-section of environmental art, character work, and animated effects from earlier game projects.</p></div>
+          <div class="pixel-asset-row">
+            <img loading="lazy" src="assets/images/pixel-room.png" alt="Pixel-art interior room scene" />
+            <img loading="lazy" src="assets/images/ant-sprite.png" alt="Pixel-art ant RPG character" />
+            <img loading="lazy" src="assets/images/bomb.gif" alt="Animated pixel-art bomb explosion" />
+          </div>
+        </article>
+
+        <article class="production-card flyer-card">
+          <div><div class="tag-row"><span class="tag">3D Model</span><span class="tag">Kid Hop-o</span></div><h3>Flyer Spaceship Model</h3><p>A stylized 3D spaceship asset created for Kid Hop-o as part of my earlier 3D game-production work.</p></div>
+          <figure class="production-image contain flyer-preview"><img loading="lazy" src="assets/images/flyer-preview.png" alt="Preview render of the Kid Hop-o Flyer spaceship model" /></figure>
+          <div class="asset-link-row"><a href="assets/models/flyer.obj">View / download OBJ source</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="art">
+      <div class="section-heading-row"><div><p class="section-kicker">Digital illustration</p><h2>Clip Studio & Character Art</h2></div><p class="section-summary">Character-focused illustration created primarily in Clip Studio Paint, alongside stylistic experiments and game-related portrait work.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/hopo-character-art.jpg" alt="Digital portrait of Kid Hop-o" /><figcaption>Kid Hop-o character artwork</figcaption></figure>
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/king-character-study.jpg" alt="Digital portrait featuring Nintendo villains" /><figcaption>Donkey Kong Country / Mario character study</figcaption></figure>
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/blaze.png" alt="Digital portrait of Blaze the Cat" /><figcaption>Blaze character portrait</figcaption></figure>
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/springtrap.jpg" alt="Digital portrait of Springtrap" /><figcaption>Springtrap character portrait</figcaption></figure>
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/art-test.png" alt="Experimental digital art style" /><figcaption>Hybrid pixel / digital-art style experiment</figcaption></figure>
+        <figure class="gallery-item"><img loading="lazy" src="assets/images/midna.jpg" alt="Digital portrait of Midna" /><figcaption>Midna character portrait</figcaption></figure>
+      </div>
+      <p class="small-note fan-note">DKCRPG and franchise character studies are fan works presented to demonstrate my own production, modeling, and illustration skills.</p>
+    </section>
+
+    <section class="card" id="experience">
+      <p class="section-kicker">Background</p><h2>Experience & Education</h2>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-meta">May – Aug 2026</div><div><h3>Animal Nutrition Intern <span>• ZooTampa at Lowry Park</span></h3><p>Prepared and distributed species-specific diets using written diet sheets and digital scales, supported high-volume nutrition-center operations, maintained feeder insects, followed sanitation and quality-control procedures, and gained introductory exposure to ZIMS, Zoo Diet NaviGator, Power BI, animal behavior, enrichment, welfare, and cooperative-care concepts. Completed a Cuban iguana nutrition research summary for staff.</p></div></article>
+        <article class="timeline-item"><div class="timeline-meta">2018 – Present</div><div><h3>Producer / Project Manager / Indie Game Developer <span>• Retnuh Productions</span></h3><p>Lead an active distributed game-development team and have coordinated more than 15 contributors across programming, art, audio, writing, and voice work while designing systems, levels, UI, narrative, production workflows, technical documentation, testing processes, and publisher-facing materials.</p></div></article>
+        <article class="timeline-item"><div class="timeline-meta">Apr 2024 – Present</div><div><h3>Owner, Animal Care & Operations <span>• Discoid Roaches Tampa</span></h3><p>Operate a feeder-insect supply business serving local reptile keepers and a retail pet store, managing colony husbandry, environmental control, population monitoring, inventory, client orders, records, and bulk fulfillment of up to several thousand insects.</p><a class="business-link" href="https://www.discoidroachestampa.com/" target="_blank" rel="noopener"><img src="assets/images/discoid-roaches-tampa-logo.svg" alt="Discoid Roaches Tampa logo" /><span>Visit Discoid Roaches Tampa</span></a></div></article>
+      </div>
+      <div class="education-grid">
+        <article class="education-card"><p class="education-date">Expected 2028</p><h3>University of South Florida</h3><p><strong>Bachelor of Arts in Computer Science</strong><br />Minor in Geographic Information Systems</p></article>
+        <article class="education-card"><p class="education-date">December 2023</p><h3>Hillsborough Community College</h3><p><strong>Associate of Science in Multimedia: Game Design</strong><br />High Honors • 3.8 GPA • Phi Theta Kappa</p></article>
+      </div>
+    </section>
+
+    <section class="card" id="training">
+      <p class="section-kicker">Training</p><h2>Certifications & Professional Development</h2>
+      <div class="credential-grid">
+        <div><strong>Global Career Accelerator</strong><span>Web Development • AI-Powered JavaScript • AI Professional Skills • Intercultural Skills, May 2026</span></div>
+        <div><strong>LinkedIn Learning</strong><span>Maya: nHair • Unreal Essential Training • Project Management Foundations</span></div>
+        <div><strong>GameDev.tv</strong><span>C# Unity Game Developer 2D</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div><p class="section-kicker">Contact</p><h2>Connect</h2><p>Open to entry-level software development, GIS/data, QA/application support, environmental technology, research, and related technical roles.</p></div>
+      <div class="contact-links"><a href="mailto:retnuhproductionsofficial@gmail.com">Email</a><a href="https://github.com/Hunterstudent62" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/hunter-hatfield-448168254/" target="_blank" rel="noopener">LinkedIn</a><a href="https://kidhop-o.com/" target="_blank" rel="noopener">Kid Hop-o</a><a href="https://www.discoidroachestampa.com/" target="_blank" rel="noopener">Discoid Roaches Tampa</a></div>
+      <p class="small-note">© <span id="year"></span> Hunter Hatfield</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const zoomTargets = document.querySelectorAll(".pipeline-visuals img, .pixel-asset-row img");
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("aria-hidden", "true");
+    lightbox.innerHTML = `
+      <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+      <div class="lightbox-content">
+        <img class="lightbox-image" alt="" />
+        <p class="lightbox-caption"></p>
+      </div>`;
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector(".lightbox-image");
+    const lightboxCaption = lightbox.querySelector(".lightbox-caption");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+
+    function openLightbox(image) {
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      lightboxCaption.textContent = image.alt;
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("lightbox-open");
+      closeButton.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("lightbox-open");
+    }
+
+    zoomTargets.forEach((image) => {
+      const wrapper = document.createElement("span");
+      wrapper.className = "zoom-wrap";
+      wrapper.setAttribute("tabindex", "0");
+      wrapper.setAttribute("role", "button");
+      wrapper.setAttribute("aria-label", `${image.alt}. Open larger preview.`);
+      wrapper.setAttribute("title", "Click to enlarge");
+
+      if (image.closest(".pixel-asset-row")) {
+        wrapper.style.background = "var(--soft)";
+        image.style.background = "var(--soft)";
+      }
+
+      image.parentNode.insertBefore(wrapper, image);
+      wrapper.appendChild(image);
+
+      const indicator = document.createElement("span");
+      indicator.className = "zoom-indicator";
+      indicator.setAttribute("aria-hidden", "true");
+      indicator.textContent = "⤢ Enlarge";
+      wrapper.appendChild(indicator);
+
+      wrapper.addEventListener("click", () => openLightbox(image));
+      wrapper.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox(image);
+        }
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+    });
+  </script>
+</body>
+</html>
