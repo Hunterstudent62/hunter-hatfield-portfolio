@@ -224,6 +224,40 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; fo
 .business-link:focus-visible span::after { transform: translate(1px, -1px); }
 .business-link.hopo-link img { image-rendering: pixelated; }
 .business-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; border-radius: 4px; }
+.evaluation-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: .86rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.evaluation-filetype {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+.evaluation-link > span:last-child::after {
+  content: "↗";
+  margin-left: 7px;
+  font-size: .82em;
+  color: var(--muted);
+}
+.evaluation-link:hover > span:last-child,
+.evaluation-link:focus-visible > span:last-child { text-decoration: underline; text-underline-offset: 3px; }
+.evaluation-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; border-radius: 4px; }
 .education-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
 .education-card { padding: 18px; border: 1px solid var(--border); background: var(--soft); border-radius: 13px; }
 .education-card h3 { margin: 2px 0 7px; }
