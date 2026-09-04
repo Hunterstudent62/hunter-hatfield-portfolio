@@ -1,8 +1,6 @@
 # Tutor Directory in C
 
-A command-line tutor directory originally created by **Hunter Hatfield** for USF's COP 3514 Program Design course and lightly cleaned/refactored for portfolio use.
-
-The assignment evolved across several projects. This version reflects the Project 10 goal of splitting the application into multiple C source and header files while retaining a dynamically allocated linked-list data model.
+I originally built this command-line tutor directory for USF's COP 3514 Program Design course. The assignment was expanded over several projects, and by Project 10 I had split the program into multiple C source and header files while keeping the tutor records in a dynamically allocated linked list.
 
 ## Features
 
@@ -40,4 +38,4 @@ gcc -std=c11 -Wall -Wextra -Wpedantic project10_tutors.c tutor.c read_line.c -o 
 
 ## Portfolio cleanup
 
-The portfolio pass intentionally stayed close to the original coursework. Changes were limited to fixing header/include issues, resolving compiler warnings, improving input validation/output, and clarifying comments and naming. The linked-list design and core assignment logic remain the original implementation.
+For the portfolio, I kept the original assignment structure and logic instead of rewriting the project from scratch. I mainly fixed header/include problems, cleared compiler warnings, tightened some input validation and output, and cleaned up comments and names so the code is easier to read.
