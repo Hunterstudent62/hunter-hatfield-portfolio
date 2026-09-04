@@ -1,6 +1,6 @@
 # Poultry Production Tracker
 
-A Java console application originally created by **Hunter Hatfield** for HCC's COP 2800 Java Programming course as P7, *Counting Your Chickens*. It has been lightly cleaned and expanded for portfolio use while retaining the original array-based design.
+I originally made this Java console program for HCC's COP 2800 Java Programming course as P7, *Counting Your Chickens*. The program tracks egg production for 1-10 chickens over however many weeks the user enters, using a two-dimensional array to store the weekly totals.
 
 ## Features
 
@@ -32,4 +32,4 @@ java PoultryProductionTracker
 
 ## Portfolio cleanup
 
-The cleanup intentionally preserves the original coursework's core architecture rather than rewriting it as a new application. Changes include clearer variable names, modern date/time handling, safer input parsing, helper methods, formatted summaries, per-week averages, and a highest-producer summary.
+For the portfolio version, I kept the same array-based program rather than turning it into a different project. I cleaned up variable names and input parsing, switched the date handling to Java's modern date/time API, broke some logic into helper methods, and improved the final summary with weekly averages and the highest-producing chicken.
