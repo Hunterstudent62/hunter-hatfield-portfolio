@@ -167,6 +167,49 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; fo
 .status { background: #eee2bf; color: #705d27; }
 .link-row { display: flex; flex-wrap: wrap; gap: 14px; }
 
+.featured-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.featured-media figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.featured-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: contain;
+  background: #fff;
+  cursor: zoom-in;
+}
+.featured-media figcaption {
+  padding: 7px 9px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.35;
+}
+.featured-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #1d1d1b;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.featured-video iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
 .game-grid { grid-template-columns: repeat(3, 1fr); }
 .game-grid .project-tile p,
 .game-grid .project-note { color: var(--text); }
