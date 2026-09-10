@@ -1,0 +1,130 @@
+
+
+===== PAGE 1 =====
+
+MAC 2313 Calc and Analytical Geometry III  Hunter Hatfield 7/23/2026 
+Calculus III and the Mathematics of Insect Flight 
+Mathematics primarily concerns itself with its own terminology and laws, but it is 
+integral to our understanding of physics. New applications of previously theoretical 
+mathematical concepts continue to arise, especially in scientific fields. Biological systems are 
+complex and cross-disciplinary, but physics and applied mathematics are often hidden inside real 
+biological systems, such as animal motion. Insect flight is incredibly fascinating, especially the 
+advanced aerial locomotion of the order Diptera, commonly known as the true flies. Flies have 
+some of the greatest aerial mobility among all animals, being able to hover, turn, and maneuver 
+in ways that look simple but are very physically complicated. I chose this topic for my paper 
+because I am passionate about the intersection of my major, Computer Science, and wildlife, 
+ecology, and biological research. The ways in which insect flight connects to Calculus III include 
+vector-valued functions, acceleration, vector fields, and forces acting from multiple directions, 
+such as inertia, gravity, and propulsion. Essentially, insect flight is the perfect example of 
+Calculus III concepts used to describe real motion and airflow in living organisms. 
+Insect flight is more complicated than it may appear at first and is extensively studied by 
+biologists, physicists, and engineers alike. “The flight of insects has fascinated physicists and 
+biologists for more than a century” (Sane, 2003, p. 4191). Some of the older, simpler airplane 
+concepts were not enough to explain flapping flight because insect wings do not move in a linear 
+way but as a combination of multiple vectors, rotation, and interaction with moving air. New 
+tools such as high-speed video, mechanical wing models, and computational models make insect 
+flight easier to study than ever before. These tools often depend on measuring position, direction, 
+speed, acceleration, and force. 
+
+===== PAGE 2 =====
+
+MAC 2313 Calc and Analytical Geometry III  Hunter Hatfield 7/23/2026 
+Calculus III uses vector-valued functions like r(t) to describe the position of something 
+moving through 3D space. A fly’s body position, or even a single point on the surface of a fly’s 
+wing, can be thought of as a position vector changing over time. The derivative r’(t) gives 
+velocity, meaning the direction and speed at that specific moment, just as its second derivative 
+gives acceleration. Flies can perform very complex aerial maneuvers, such as flipping upside 
+down midair and landing on the ceiling. This involves rapid acceleration in order to change 
+upward motion and body orientation in a fraction of a second. A successful inverted landing 
+involves “an initial upward acceleration followed by rapid body rotation and leg extension” (Liu 
+et al., 2019). 
+V ectors have not only direction but also magnitude, and this is true for forces such as lift, 
+drag, gravity, and propulsion. Flies must produce enough upward force to stay in the air while 
+also controlling rotational motion for steering and complex movements forward, backward, and 
+sideways. A fly’s wings do not simply push air downward but rotate and interact with air left 
+behind by previous wingbeats. Insect flight depends on “delayed stall, rotational circulation, and 
+wake capture” (Dickinson et al., 1999, p. 1954). The wing can maintain useful airflow and lift 
+during part of the wing stroke instead of immediately losing lift like a simple fixed wing, such as 
+an airplane wing, might. When the wing turns around at the end of a stroke, that rotation and the 
+remaining moving air can help produce extra force. In Calculus III terms, these forces can be 
+described using vectors, while a dot product could measure how much of a force acts in a 
+specific direction, such as upward lift or forward motion. 
+The rotation of the fly’s wings is the key to rapid angular change during flight and 
+redirects forces quickly. Insects can “modulate the direction and magnitude of flight forces” 
+(Dickinson et al., 1999, p. 1954). When a fly changes the angle and motion of its wings, it 
+
+===== PAGE 3 =====
+
+MAC 2313 Calc and Analytical Geometry III  Hunter Hatfield 7/23/2026 
+changes the aerodynamic force vectors acting on its body. If the net force changes, the fly’s 
+acceleration changes. This connects to the idea of a space curve in Calculus III, where the 
+position of a moving point can be described by a vector-valued function over time. A fly’s 
+motion through the air can be thought of as a point tracing a curved path through three-
+dimensional space, but the actual motion is more complicated because that path is constantly 
+affected by several changing force vectors, including lift, drag, gravity, and propulsion. In a 
+simulation of fly movement, a computer model would need to account for position, velocity, 
+acceleration, wing angle, and changing force vectors over time. 
+A vector field is a useful way to imagine the medium the fly is pushing and moving 
+through: the air. In a vector field, each point in space has a vector showing the direction as well 
+as the speed of flow at that location. A fly’s wing creates complicated airflow because of the 
+redistribution of the air and the altering of the vectors of existing particles. A leading-edge vortex 
+“greatly enhances the forces generated by the wing” (Sane, 2003, p. 4191). A vortex is a spinning 
+airflow that can help increase the aerodynamic force produced by the wing. This connects to 
+Calculus III because vector fields describe changing flow through space, while flux describes 
+how much flow passes across a surface. Full fluid dynamics is more advanced than what I have 
+learned so far, but Calculus III provides the basic language for describing direction, flow, and 
+force. 
+In our ordinary lives, flies are more often seen as an annoyance and are not really given 
+more than a glancing thought, but flies are a vital part of the ecosystem as pollinators, 
+decomposers, and prey animals. Their flight affects how they find food, escape predators, locate 
+mates, and spread through habitats. A fly’s ability to maneuver itself is important to 
+understanding its biology and also to understanding how flies can have such a large effect on the 
+
+===== PAGE 4 =====
+
+MAC 2313 Calc and Analytical Geometry III  Hunter Hatfield 7/23/2026 
+ecosystem. Outside of biological fields, a fly’s movement is useful for engineering as it can be 
+used to inspire new and more complex models of flight for technologies like drones and other 
+aerial devices. One direct example of this kind of biological inspiration is the Harvard RoboBee 
+project. Researchers created an insect-scale flying robot modeled partly after fly biology, with 
+small flapping wings and a control system designed to manage the instability of flight at such a 
+small size (Ma et al., 2013). Possible applications for this kind of work include environmental 
+monitoring, search-and-rescue, and even crop pollination, which connects insect flight research 
+back to both ecology and technology. As a Computer Science student with an interest in biology 
+and entomology, this topic shows how math can support models, simulations, and animal-related 
+technology. 
+This topic helped me personally connect how Calculus concepts are more than just 
+abstract formulas and have real-life applications to physics and living movement. V ector-valued 
+functions, velocity, and acceleration come together to describe something that seems exceedingly 
+complicated when viewed as a whole. Mathematics allows complex problems to be studied 
+quantitatively, which is especially useful when studying animal motion. This paper helped me 
+personally see vectors as actual descriptors of real-life forces instead of only as arrows in a 
+homework problem. This topic relates to my future interest in Computer Science, such as 
+ecological data and simulation software, and I believe it prepares me to think more critically 
+about the application of mathematics. 
+Fly flight is a real-world example of Calculus III concepts being applied. V ector-valued 
+functions describe the position of the fly itself, derivatives describe the fly’s velocity and 
+acceleration, vectors describe the individual acting forces on the fly, and vector fields relate to 
+the airflow around the organism. Both physical and mathematical models are used to understand 
+
+===== PAGE 5 =====
+
+MAC 2313 Calc and Analytical Geometry III  Hunter Hatfield 7/23/2026 
+the movements of the animal, its hovering, wing rotation, and even complex movements like an 
+inverted landing. Studying insect flight patterns and their relation to mathematics makes math 
+feel less like disconnected formulas and more like a formal and quantitative language for 
+understanding movement in nature. 
+ 
+References: 
+Dickinson, M. H., Lehmann, F.-O., & Sane, S. P. (1999). Wing rotation and the aerodynamic 
+basis of insect flight. Science, 284(5422), 1954–1960. 
+https://doi.org/10.1126/science.284.5422.1954 
+Liu, P., Sane, S. P., Mongeau, J.-M., Zhao, J., & Cheng, B. (2019). Flies land upside down on a 
+ceiling using rapid visually mediated rotational maneuvers. Science Advances, 5(10), Article 
+eaax1877. https://doi.org/10.1126/sciadv.aax1877 
+Sane, S. P. (2003). The aerodynamics of insect flight. Journal of Experimental Biology, 206(23), 
+4191–4208. https://doi.org/10.1242/jeb.00663 
+Ma, K. Y ., Chirarattananon, P., Fuller, S. B., & Wood, R. J. (2013). Controlled flight of a 
+biologically inspired, insect-scale robot. Science, 340(6132), 603–607. 
+https://doi.org/10.1126/science.1231806 
+ 
